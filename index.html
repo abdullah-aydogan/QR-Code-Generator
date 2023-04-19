@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>QR Kod Oluşturucu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <p>QR Kod Oluşturucu</p>
+            <input type="text" id="qrText" placeholder="Metin veya URL yazınız...">
+
+            <!-- QR Kod Oluşturma Butonu -->
+            <button onclick="generateQR()">
+                <div style="justify-content: center; align-items: center; display: flex;">
+                    <img style="margin-right: 6px;" src="img/qr_icon.png"> Oluştur
+                </div>
+            </button>
+
+            <!-- QR Kod İndirme Butonu -->
+            <button onclick="downloadQR()" id="download_btn">
+                <div style="justify-content: center; align-items: center; display: flex;">
+                    <img style="margin-right: 6px;" src="img/download_icon.png"> QR Kodu İndir
+                </div>
+            </button>
+
+            <!-- QR Kod Gösterme Alanı -->
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
